@@ -1,27 +1,27 @@
 (lang dune 3.21)
 (using rocq 0.11)
 
-(name PROJECT)
+(name basic-rocq)
 
 (generate_opam_files true)
 
 (source
- (github GH_USERNAME/PROJECT))
+ (github CharlesAverill/basic-rocq))
 
 (authors
- "NAME <EMAIL>")
+ "Charles Averill <charlesaverill20@gmail.com>")
 
 (maintainers
- "NAME <EMAIL>")
+ "Charles Averill <charlesaverill20@gmail.com>")
 
-(license LICENSE)
+(license MIT)
 
-(documentation https://github.com/GH_USERNAME/PROJECT)
+(documentation https://github.com/CharlesAverill/basic-rocq)
 
 (package
- (name PROJECT)
- (synopsis "SYNOPSIS")
- (description "DESCRIPTION")
+ (name basic-rocq)
+ (synopsis "Dartmouth BASIC formalized in Rocq")
+ (description "A formalization of the small-step semantics of Dartmouth BASIC with a Hoare Logic proof system")
  (depends
    (dune (>= 3.21.0))
    (rocq (>= 9.0.0))))
